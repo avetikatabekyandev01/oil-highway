@@ -199,11 +199,7 @@
   }
 
   &__title {
-
-    span {
-      color: #E30613;
-      margin-bottom: 8px;
-    }
+    text-align: center;
   }
 
   &__container {
@@ -219,9 +215,18 @@
       }
     }
 
+    @media (max-width: 1080px) {
+      .participate__item {
+        flex: 0 1 45%;
+      }
+    }
+
     @media (max-width: 768px) {
-      flex-direction: column;
       gap: 14px;
+    }
+
+    @media (max-width: 550px) {
+      flex-direction: column;
     }
   }
 
@@ -233,6 +238,7 @@
     text-align: center;
     background: #E4E4E4;
     padding: 33px 14px 0;
+    box-sizing: border-box;
 
     @media (max-width: 768px) {
       max-width: 255px;
@@ -254,6 +260,11 @@
     }
 
     &:nth-child(4) {
+      .participate__item-text {
+        display: flex;
+        flex-direction: column;
+      }
+
       img {
         width: 249px;
         margin-bottom: 0;
@@ -584,11 +595,19 @@
       justify-content: space-between;
       align-items: center;
       gap: 10px;
+      cursor: pointer;
+
+      &:hover {
+        .faq__item-title {
+          color: #E30613;
+        }
+      }
     }
 
     &-title {
       font-size: 34px;
       font-weight: 900;
+      transition: 0.3s;
 
       @media (max-width: 768px) {
         font-size: 18px;
@@ -602,7 +621,6 @@
       height: 48px;
       display: flex;
       justify-content: center;
-      align-items: center;
       border-radius: 100%;
       background: #fff;
       cursor: pointer;
@@ -611,9 +629,15 @@
       @media (max-width: 768px) {
         width: 14px;
         height: 14px;
+      }
 
-        svg {
+      svg {
+        margin-top: 17px;
+
+        @media (max-width: 768px) {
           width: 8px;
+          height: 4px;
+          margin-top: 6px;
         }
       }
     }
@@ -687,6 +711,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      font-weight: 400;
       font-size: 34px;
       color: #fff;
       margin-bottom: 64px;
@@ -707,6 +732,7 @@
       font-size: 32px;
       font-weight: 500;
       color: #E30613;
+      background: #fff;
       display: flex;
       justify-content: center;
       align-items: center;
