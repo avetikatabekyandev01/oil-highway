@@ -135,8 +135,16 @@
 }
 @media (max-width: 768px) {
   .hero-banner__title {
+    display: inline-block;
+    flex-direction: row;
     font-size: 34px;
     margin-bottom: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .hero-banner__title {
+    display: flex;
+    flex-direction: column;
   }
 }
 .hero-banner__text {
@@ -147,9 +155,13 @@
 }
 @media (max-width: 768px) {
   .hero-banner__text {
-    max-width: 247px;
     font-size: 18px;
     margin-bottom: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .hero-banner__text {
+    max-width: 247px;
   }
 }
 .hero-banner__desc {
@@ -320,8 +332,12 @@
 }
 @media (max-width: 768px) {
   .prizes__container {
-    flex-direction: column;
     gap: 35px;
+  }
+}
+@media (max-width: 500px) {
+  .prizes__container {
+    flex-direction: column;
   }
 }
 .prizes__item {
@@ -330,6 +346,9 @@
   align-items: center;
 }
 @media (max-width: 768px) {
+  .prizes__item:first-child {
+    width: 100%;
+  }
   .prizes__item:first-child p {
     max-width: 130px;
   }
@@ -446,6 +465,13 @@
     font-size: 18px;
   }
 }
+@media (max-width: 480px) {
+  .subscribe__item-text {
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 .winners {
   scroll-margin-top: 160px;
@@ -463,6 +489,7 @@
   font-size: 34px;
   color: #fff;
   text-align: center;
+  margin: 0 50px;
 }
 @media (max-width: 768px) {
   .winners__content-title {
