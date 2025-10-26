@@ -492,8 +492,15 @@
 }
 .winners__content {
   width: 100%;
-  padding: 50px 0;
   background-image: url("../img/feedback-background.png");
+  padding: 118px 0 100px;
+}
+@media (max-width: 768px) {
+  .winners__content {
+    width: fit-content;
+    padding: 33px 0;
+    margin: 0 16px;
+  }
 }
 .winners__content-title {
   font-size: 34px;
@@ -505,6 +512,96 @@
   .winners__content-title {
     font-size: 14px;
   }
+}
+.winners__container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+.winners__list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin: 0 24px 90px;
+}
+@media (max-width: 768px) {
+  .winners__list {
+    margin: 0 0 30px;
+  }
+}
+.winners__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding-bottom: 24px;
+  border-bottom: 1.5px solid #fff;
+  color: #fff;
+}
+@media (max-width: 1080px) {
+  .winners__item {
+    padding-bottom: 18px;
+  }
+}
+.winners__item-mail {
+  font-size: 34px;
+  font-weight: 700;
+}
+@media (max-width: 1080px) {
+  .winners__item-mail {
+    font-size: 22px;
+  }
+}
+.winners__item-text {
+  font-size: 18px;
+}
+@media (max-width: 1080px) {
+  .winners__item-text {
+    font-size: 12px;
+  }
+}
+.winners__actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 77px;
+}
+@media (max-width: 1080px) {
+  .winners__actions {
+    gap: 12px;
+  }
+}
+@media (max-width: 600px) {
+  .winners__actions {
+    flex-direction: column;
+  }
+}
+.winners__actions button {
+  width: 100%;
+  height: 66px;
+  font-size: 32px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+@media (max-width: 1080px) {
+  .winners__actions button {
+    font-size: 16px;
+    height: 55px;
+  }
+}
+.winners__actions button:hover {
+  transform: scale(1.05);
+}
+.winners__actions button:first-child {
+  border: 4px solid #fff;
+  background: transparent;
+  color: #fff;
+}
+.winners__actions button:last-child {
+  font-weight: 500;
+  background: #fff;
+  color: #E30613;
+  border: none;
 }
 
 .draw-winners {
