@@ -664,6 +664,11 @@
 .faq__item-text {
   padding-top: 20px;
 }
+@media (max-width: 768px) {
+  .faq__item-text {
+    padding-top: 8px;
+  }
+}
 .faq__item.is-open .faq__item-arrow {
   background: #E30613;
   transform: rotate(180deg);
