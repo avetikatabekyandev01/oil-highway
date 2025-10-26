@@ -97,12 +97,21 @@
       font-size: 18px;
       text-decoration: none;
       color: #fff;
+      transition: opacity 0.3s;
 
       @media(max-width: 768px) {
         width: 100%;
         text-align: center;
         font-size: 10px;
       }
+    }
+
+    &:hover a {
+      opacity: 0.5;
+    }
+
+    a:hover {
+      opacity: 1;
     }
   }
 }
@@ -762,6 +771,11 @@
       align-items: center;
       border: none;
       cursor: pointer;
+      transition: 0.3s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
 
       @media(max-width: 768px) {
         width: 184px;
