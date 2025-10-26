@@ -690,14 +690,13 @@
 
     &-text {
       padding-top: 20px;
+
+      @media (max-width: 768px) {
+        padding-top: 8px;
+      }
     }
 
     &.is-open {
-      //gap: 20px;
-      //
-      //@media(max-width: 768px) {
-      //  gap: 8px;
-      //}
 
       .faq__item {
         &-arrow {
