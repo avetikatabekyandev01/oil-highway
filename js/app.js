@@ -5,12 +5,12 @@ if (container) {
 
   // Ставим стартовое состояние
   items.forEach((item) => {
-    const panel = item.querySelector('.faq__item-text');
+    const panel = item.querySelector('.faq__item-content');
     if (panel) panel.style.maxHeight = '0px';
   });
 
   function toggle(item) {
-    const panel = item.querySelector('.faq__item-text');
+    const panel = item.querySelector('.faq__item-content');
     if (!panel) return;
 
     if (item.classList.contains('is-open')) {

@@ -648,7 +648,7 @@
     margin-top: 6px;
   }
 }
-.faq__item-text {
+.faq__item-content {
   font-size: 18px;
   margin-right: 48px;
   max-height: 0;
@@ -656,18 +656,13 @@
   transition: max-height 0.35s ease;
 }
 @media (max-width: 768px) {
-  .faq__item-text {
+  .faq__item-content {
     font-size: 10px;
     margin-right: 0;
   }
 }
-.faq__item.is-open {
-  gap: 20px;
-}
-@media (max-width: 768px) {
-  .faq__item.is-open {
-    gap: 8px;
-  }
+.faq__item-text {
+  padding-top: 20px;
 }
 .faq__item.is-open .faq__item-arrow {
   background: #E30613;
@@ -676,7 +671,7 @@
 .faq__item.is-open .faq__item-arrow svg path {
   stroke: #fff;
 }
-.faq__item.is-open-text {
+.faq__item.is-open-content {
   max-height: 500px;
 }
 
